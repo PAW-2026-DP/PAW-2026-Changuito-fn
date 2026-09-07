@@ -69,19 +69,3 @@ Hojas de estilo, variables visuales, layout y reglas responsive para movil y esc
 ### `utils/`
 Funciones auxiliares reutilizables, como formateo de precios, validaciones y transformacion de datos.
 
-## Criterios funcionales
-
-- La interfaz sera responsive y estara pensada para movil y escritorio.
-- La validacion en el navegador sera de usabilidad; las reglas de seguridad se verificaran en el backend.
-- El frontend no almacenara datos de tarjetas ni implementara una pasarela de pago real.
-- Los estados del pedido se mostraran segun la maquina de estados definida por el backend.
-- Los datos de precios provendran del backend, sin scraping de sitios externos.
-
-## Proximos pasos
-
-1. Definir los wireframes de las pantallas principales.
-2. Acordar los contratos de las solicitudes al backend.
-3. Implementar la estructura visual base.
-4. Incorporar el catalogo y la lista de compras.
-5. Integrar el resultado del optimizador y el checkout.
-6. Agregar el seguimiento de pedidos y los ajustes de responsividad.
