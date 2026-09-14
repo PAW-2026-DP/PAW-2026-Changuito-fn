@@ -1,4 +1,144 @@
-main > ul > li > article { display: flex; flex-direction: column; }
-main > ul > li > article p:nth-of-type(2) { min-height: 3.2rem; }
-main > ul > li > article a { margin-top: auto; }
-main > ul > li > article a + a { margin-top: .6rem; }
+.lista-productos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.lista-productos li article {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: .7rem;
+  padding: .8rem .9rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: none;
+}
+
+.producto-header,
+.producto-footer,
+.producto-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .6rem;
+}
+
+.producto-header h2 {
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--ink);
+  line-height: 1.1;
+}
+
+.producto-header span {
+  color: var(--muted);
+  font-size: .72rem;
+}
+
+.producto-controls {
+  background: var(--cream);
+  border-radius: 10px;
+  padding: .18rem .18rem;
+  justify-content: flex-start;
+}
+
+.producto-controls button {
+  width: 26px;
+  min-width: 26px;
+  flex: 0 0 auto;
+  height: 26px;
+  padding: 0;
+  font-size: 1.1rem;
+  line-height: 1;
+  display: grid;
+  place-items: center;
+  border-radius: 7px;
+  background: var(--green);
+  color: #fff;
+  border: 0;
+}
+
+.cantidad-box {
+  flex: 0 0 auto;
+  display: grid;
+  gap: .2rem;
+  min-width: 0;
+  width: 4.2rem;
+}
+
+.cantidad-box label,
+.producto-comercio label {
+  font-size: .7rem;
+  color: var(--muted);
+}
+
+.cantidad-box input,
+.producto-comercio select {
+  width: 100%;
+  min-height: 32px;
+  border: 1px solid #ccd5cf;
+  border-radius: 8px;
+  background: var(--surface);
+  padding: .35rem .55rem;
+  font-size: .9rem;
+  font: inherit;
+  color: var(--ink);
+}
+
+.cantidad-box input {
+  text-align: center;
+  padding: .35rem .3rem;
+}
+
+.producto-footer {
+  margin-top: -.1rem;
+}
+
+.producto-footer data {
+  font-weight: 800;
+  color: var(--ink);
+  font-size: 1rem;
+}
+
+.producto-footer button {
+  width: 30px;
+  min-width: 30px;
+  flex: 0 0 auto;
+  height: 30px;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  background: transparent;
+  color: var(--green-dark);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.producto-comercio {
+  display: grid;
+  gap: .2rem;
+}
+
+.producto-comercio select {
+  font-size: .9rem;
+  min-height: 32px;
+}
+
+@media (max-width: 640px) {
+  .producto-header,
+  .producto-footer,
+  .producto-controls {
+    flex-wrap: wrap;
+  }
+
+  .producto-header {
+    align-items: flex-start;
+  }
+
+  .producto-controls {
+    padding: .5rem;
+  }
+}

@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="../styles/main.css">
   <link rel="stylesheet" href="../styles/components.css">
   <link rel="stylesheet" href="../styles/pages.css">
+  <link rel="stylesheet" href="../styles/listas.css">
 </head>
 <body>
   <header>
@@ -33,95 +34,98 @@
         <p>7 productos</p>
         <button type="button">Guardar como frecuente</button>
 
-        <ul>
+        <ul class="lista-productos">
           <li>
             <article>
-              <img src="../assets/img/placeholder.svg" alt="Leche entera 1L" width="64" height="64">
-              <h2>Leche entera 1L</h2>
-              <p>Marca · presentación</p>
-              <p>
+              <div class="producto-header">
+                <h2>Leche entera 1L</h2>
+                <span>Marca · presentación</span>
+              </div>
+
+              <div class="producto-controls">
                 <button type="button" aria-label="Restar uno">−</button>
-                <label for="cant-1">Cantidad</label>
-                <input type="number" id="cant-1" name="cant-1" min="1" value="2">
+                <div class="cantidad-box">
+                  <label for="cant-1">Cantidad</label>
+                  <input type="number" id="cant-1" name="cant-1" min="1" value="2">
+                </div>
                 <button type="button" aria-label="Sumar uno">+</button>
-              </p>
-              <p><data value="1234">$ 1.234</data></p>
-              <button type="button" aria-label="Quitar Leche entera 1L de la lista">🗑</button>
+              </div>
+
+              <div class="producto-footer">
+                <data value="1234">$ 1.234</data>
+                <button type="button" aria-label="Quitar Leche entera 1L de la lista">🗑</button>
+              </div>
+
+              <div class="producto-comercio">
+                <label for="comercio-1">Comercio</label>
+                <select id="comercio-1" name="comercio-1">
+                  <option selected>Comercio A</option>
+                  <option>Comercio B</option>
+                  <option>Comercio C</option>
+                </select>
+              </div>
             </article>
           </li>
           <li>
             <article>
-              <img src="../assets/img/placeholder.svg" alt="Yerba mate 1kg" width="64" height="64">
-              <h2>Yerba mate 1kg</h2>
-              <p>Marca · presentación</p>
-              <p>
+              <div class="producto-header">
+                <h2>Yerba mate 1kg</h2>
+                <span>Marca · presentación</span>
+              </div>
+
+              <div class="producto-controls">
                 <button type="button" aria-label="Restar uno">−</button>
-                <label for="cant-2">Cantidad</label>
-                <input type="number" id="cant-2" name="cant-2" min="1" value="2">
+                <div class="cantidad-box">
+                  <label for="cant-2">Cantidad</label>
+                  <input type="number" id="cant-2" name="cant-2" min="1" value="2">
+                </div>
                 <button type="button" aria-label="Sumar uno">+</button>
-              </p>
-              <p><data value="1234">$ 1.234</data></p>
-              <button type="button" aria-label="Quitar Yerba mate 1kg de la lista">🗑</button>
+              </div>
+
+              <div class="producto-footer">
+                <data value="1234">$ 1.234</data>
+                <button type="button" aria-label="Quitar Yerba mate 1kg de la lista">🗑</button>
+              </div>
+
+              <div class="producto-comercio">
+                <label for="comercio-2">Comercio</label>
+                <select id="comercio-2" name="comercio-2">
+                  <option selected>Comercio A</option>
+                  <option>Comercio B</option>
+                  <option>Comercio C</option>
+                </select>
+              </div>
             </article>
           </li>
           <li>
             <article>
-              <img src="../assets/img/placeholder.svg" alt="Arroz largo fino 1kg" width="64" height="64">
-              <h2>Arroz largo fino 1kg</h2>
-              <p>Marca · presentación</p>
-              <p>
+              <div class="producto-header">
+                <h2>Arroz largo fino 1kg</h2>
+                <span>Marca · presentación</span>
+              </div>
+
+              <div class="producto-controls">
                 <button type="button" aria-label="Restar uno">−</button>
-                <label for="cant-3">Cantidad</label>
-                <input type="number" id="cant-3" name="cant-3" min="1" value="2">
+                <div class="cantidad-box">
+                  <label for="cant-3">Cantidad</label>
+                  <input type="number" id="cant-3" name="cant-3" min="1" value="2">
+                </div>
                 <button type="button" aria-label="Sumar uno">+</button>
-              </p>
-              <p><data value="1234">$ 1.234</data></p>
-              <button type="button" aria-label="Quitar Arroz largo fino 1kg de la lista">🗑</button>
-            </article>
-          </li>
-          <li>
-            <article>
-              <img src="../assets/img/placeholder.svg" alt="Detergente 750ml" width="64" height="64">
-              <h2>Detergente 750ml</h2>
-              <p>Marca · presentación</p>
-              <p>
-                <button type="button" aria-label="Restar uno">−</button>
-                <label for="cant-4">Cantidad</label>
-                <input type="number" id="cant-4" name="cant-4" min="1" value="2">
-                <button type="button" aria-label="Sumar uno">+</button>
-              </p>
-              <p><data value="1234">$ 1.234</data></p>
-              <button type="button" aria-label="Quitar Detergente 750ml de la lista">🗑</button>
-            </article>
-          </li>
-          <li>
-            <article>
-              <img src="../assets/img/placeholder.svg" alt="Gaseosa cola 2.25L" width="64" height="64">
-              <h2>Gaseosa cola 2.25L</h2>
-              <p>Marca · presentación</p>
-              <p>
-                <button type="button" aria-label="Restar uno">−</button>
-                <label for="cant-5">Cantidad</label>
-                <input type="number" id="cant-5" name="cant-5" min="1" value="2">
-                <button type="button" aria-label="Sumar uno">+</button>
-              </p>
-              <p><data value="1234">$ 1.234</data></p>
-              <button type="button" aria-label="Quitar Gaseosa cola 2.25L de la lista">🗑</button>
-            </article>
-          </li>
-          <li>
-            <article>
-              <img src="../assets/img/placeholder.svg" alt="Fideos 500g" width="64" height="64">
-              <h2>Fideos 500g</h2>
-              <p>Marca · presentación</p>
-              <p>
-                <button type="button" aria-label="Restar uno">−</button>
-                <label for="cant-6">Cantidad</label>
-                <input type="number" id="cant-6" name="cant-6" min="1" value="2">
-                <button type="button" aria-label="Sumar uno">+</button>
-              </p>
-              <p><data value="1234">$ 1.234</data></p>
-              <button type="button" aria-label="Quitar Fideos 500g de la lista">🗑</button>
+              </div>
+
+              <div class="producto-footer">
+                <data value="1234">$ 1.234</data>
+                <button type="button" aria-label="Quitar Arroz largo fino 1kg de la lista">🗑</button>
+              </div>
+
+              <div class="producto-comercio">
+                <label for="comercio-3">Comercio</label>
+                <select id="comercio-3" name="comercio-3">
+                  <option selected>Comercio A</option>
+                  <option>Comercio B</option>
+                  <option>Comercio C</option>
+                </select>
+              </div>
             </article>
           </li>
         </ul>
@@ -137,6 +141,7 @@
           <dt>Tamaño de envío</dt>
           <dd>Mediano</dd>
         </dl>
+
         <button type="submit">Optimizar compra</button>
         <fieldset>
           <legend>Si falta un producto:</legend>
