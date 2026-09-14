@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Changuito · Pedido #1042</title>
+</head>
+<body>
+  <header>
+    <a href="../index.html">Changuito</a>
+    <form action="explorar.html" method="get" role="search">
+      <label for="buscar">Buscar productos</label>
+      <input type="search" id="buscar" name="q" placeholder="Buscar productos…">
+      <button type="submit">Buscar</button>
+    </form>
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="explorar.html">Explorar</a></li>
+        <li><a href="mi-lista.html">Mi lista (7)</a></li>
+        <li><a href="mis-pedidos.html">Mis pedidos</a></li>
+        <li><a href="perfil.html"><img src="../assets/img/placeholder.svg" alt="" width="32" height="32"> María Clara</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article aria-labelledby="pedido-titulo">
+      <header>
+        <p><a href="mis-pedidos.html">‹ Mis pedidos</a></p>
+        <h1 id="pedido-titulo">Pedido #1042</h1>
+        <p><strong>EN PREPARACIÓN</strong></p>
+        <form action="mis-pedidos.html" method="post">
+          <button type="submit">Cancelar pedido</button>
+        </form>
+      </header>
+
+      <section aria-labelledby="seguimiento-titulo">
+        <h2 id="seguimiento-titulo">Seguimiento</h2>
+        <ol>
+          <li>PENDIENTE</li>
+          <li>CONFIRMADO</li>
+          <li aria-current="step">EN PREPARACIÓN</li>
+          <li>LISTO PARA RETIRO</li>
+          <li>ASIGNADO</li>
+          <li>RETIRADO</li>
+          <li>EN CAMINO</li>
+          <li>ENTREGADO</li>
+        </ol>
+      </section>
+
+      <section aria-labelledby="por-comercio-titulo">
+        <h2 id="por-comercio-titulo">Estado por comercio</h2>
+
+        <article aria-labelledby="comercio-a-titulo">
+          <h3 id="comercio-a-titulo">Comercio A</h3>
+          <p><strong>EN PREPARACIÓN</strong></p>
+          <ul>
+            <li>Producto 1 · x2 · <data value="1234">$ 1.234</data></li>
+            <li>Producto 2 · x2 · <data value="1234">$ 1.234</data></li>
+            <li>Producto 3 · x2 · <data value="1234">$ 1.234</data></li>
+          </ul>
+        </article>
+
+        <article aria-labelledby="comercio-b-titulo">
+          <h3 id="comercio-b-titulo">Comercio B</h3>
+          <p><strong>LISTO PARA RETIRO</strong></p>
+          <ul>
+            <li>Producto 1 · x2 · <data value="1234">$ 1.234</data></li>
+            <li>Producto 2 · x2 · <data value="1234">$ 1.234</data></li>
+            <li>Producto 3 · x2 · <data value="1234">$ 1.234</data></li>
+          </ul>
+        </article>
+      </section>
+
+      <section aria-labelledby="entrega-titulo">
+        <h2 id="entrega-titulo">Entrega</h2>
+        <address>Calle Falsa 123, Luján</address>
+        <p>Hoy 18–19 h</p>
+        <p>Repartidor: a asignar</p>
+        <p><strong>Total <data value="12400">$ 12.400</data></strong></p>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p>Changuito</p>
+    <p>Comprá mejor, viví tranquilo</p>
+    <nav aria-label="Institucional">
+      <ul>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Privacidad</a></li>
+        <li><a href="#">Términos</a></li>
+      </ul>
+    </nav>
+    <p><small>© 2026 Changuito</small></p>
+  </footer>
+
+  <nav aria-label="Navegación inferior">
+    <ul>
+      <li><a href="explorar.html">Explorar</a></li>
+      <li><a href="mi-lista.html">Mi lista</a></li>
+      <li><a href="mis-pedidos.html" aria-current="page">Pedidos</a></li>
+      <li><a href="perfil.html">Perfil</a></li>
+    </ul>
+  </nav>
+</body>
+</html>

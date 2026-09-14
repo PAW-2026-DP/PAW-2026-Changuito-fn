@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Changuito · Mis pedidos</title>
+</head>
+<body>
+  <header>
+    <a href="../index.html">Changuito</a>
+    <form action="explorar.html" method="get" role="search">
+      <label for="buscar">Buscar productos</label>
+      <input type="search" id="buscar" name="q" placeholder="Buscar productos…">
+      <button type="submit">Buscar</button>
+    </form>
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="explorar.html">Explorar</a></li>
+        <li><a href="mi-lista.html">Mi lista (7)</a></li>
+        <li><a href="mis-pedidos.html" aria-current="page">Mis pedidos</a></li>
+        <li><a href="perfil.html"><img src="../assets/img/placeholder.svg" alt="" width="32" height="32"> María Clara</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Mis pedidos</h1>
+
+    <nav aria-label="Pestañas">
+      <ul>
+        <li><a href="mis-pedidos.html?estado=en-curso" aria-current="true">En curso</a></li>
+        <li><a href="mis-pedidos.html?estado=entregados">Entregados</a></li>
+        <li><a href="mis-pedidos.html?estado=cancelados">Cancelados</a></li>
+      </ul>
+    </nav>
+
+    <table>
+      <caption>Listado de pedidos</caption>
+      <thead>
+        <tr>
+          <th scope="col">Pedido</th>
+          <th scope="col">Fecha</th>
+          <th scope="col">Comercios</th>
+          <th scope="col">Total</th>
+          <th scope="col">Estado</th>
+          <th scope="col">Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">#1042</th>
+          <td><time datetime="2026-09-12">12/09/2026</time></td>
+          <td>A, B</td>
+          <td><data value="12400">$ 12.400</data></td>
+          <td>EN PREPARACIÓN</td>
+          <td><a href="detalle-pedido.html">Ver ›</a></td>
+        </tr>
+        <tr>
+          <th scope="row">#1038</th>
+          <td><time datetime="2026-09-10">10/09/2026</time></td>
+          <td>A</td>
+          <td><data value="8300">$ 8.300</data></td>
+          <td>EN CAMINO</td>
+          <td><a href="detalle-pedido.html">Ver ›</a></td>
+        </tr>
+        <tr>
+          <th scope="row">#1021</th>
+          <td><time datetime="2026-09-02">02/09/2026</time></td>
+          <td>B, C</td>
+          <td><data value="15100">$ 15.100</data></td>
+          <td>ENTREGADO</td>
+          <td><a href="detalle-pedido.html">Ver ›</a></td>
+        </tr>
+        <tr>
+          <th scope="row">#1009</th>
+          <td><time datetime="2026-08-28">28/08/2026</time></td>
+          <td>A</td>
+          <td><data value="5900">$ 5.900</data></td>
+          <td>CANCELADO</td>
+          <td><a href="detalle-pedido.html">Ver ›</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <nav aria-label="Paginación">
+      <ul>
+        <li><a href="#" aria-label="Página anterior">‹</a></li>
+        <li><a href="#" aria-current="page">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li>…</li>
+        <li><a href="#" aria-label="Página siguiente">›</a></li>
+      </ul>
+    </nav>
+  </main>
+
+  <footer>
+    <p>Changuito</p>
+    <p>Comprá mejor, viví tranquilo</p>
+    <nav aria-label="Institucional">
+      <ul>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Privacidad</a></li>
+        <li><a href="#">Términos</a></li>
+      </ul>
+    </nav>
+    <p><small>© 2026 Changuito</small></p>
+  </footer>
+
+  <nav aria-label="Navegación inferior">
+    <ul>
+      <li><a href="explorar.html">Explorar</a></li>
+      <li><a href="mi-lista.html">Mi lista</a></li>
+      <li><a href="mis-pedidos.html" aria-current="page">Pedidos</a></li>
+      <li><a href="perfil.html">Perfil</a></li>
+    </ul>
+  </nav>
+</body>
+</html>

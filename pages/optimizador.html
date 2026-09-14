@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Changuito · Dónde conviene comprar</title>
+</head>
+<body>
+  <header>
+    <a href="../index.html">Changuito</a>
+    <form action="explorar.html" method="get" role="search">
+      <label for="buscar">Buscar productos</label>
+      <input type="search" id="buscar" name="q" placeholder="Buscar productos…">
+      <button type="submit">Buscar</button>
+    </form>
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="explorar.html">Explorar</a></li>
+        <li><a href="mi-lista.html">Mi lista (7)</a></li>
+        <li><a href="mis-pedidos.html">Mis pedidos</a></li>
+        <li><a href="perfil.html"><img src="../assets/img/placeholder.svg" alt="" width="32" height="32"> María Clara</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Dónde conviene comprar tu lista</h1>
+    <p>Solo sugerimos: vos elegís con qué comercios te quedás.</p>
+
+    <nav aria-label="Pestañas">
+      <ul>
+        <li><a href="#escenarios" aria-current="true">Escenarios</a></li>
+        <li><a href="#detalle">Detalle</a></li>
+        <li><a href="#faltantes">Faltantes</a></li>
+      </ul>
+    </nav>
+
+    <form action="checkout.html" method="get">
+      <section id="escenarios" aria-labelledby="escenarios-titulo">
+        <h2 id="escenarios-titulo">Escenarios</h2>
+        <ul>
+          <li>
+            <article>
+              <p><strong>★ RECOMENDADO</strong></p>
+              <h3>Dividir en 2 comercios</h3>
+              <p>2 comercio(s)</p>
+              <ul>
+                <li>Comercio A · n productos · <data value="0">$ 0.000</data></li>
+                <li>Comercio B · n productos · <data value="0">$ 0.000</data></li>
+              </ul>
+              <dl>
+                <dt>Envío P(n)</dt>
+                <dd><data value="0">$ 0.000</data></dd>
+                <dt>Total</dt>
+                <dd><data value="11200">$ 11.200</data></dd>
+              </dl>
+              <p>Ahorrás $ 0.000 vs. un solo comercio</p>
+              <input type="radio" id="escenario-1" name="escenario" value="1" checked>
+              <label for="escenario-1">Elegir este escenario</label>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3>Todo en Comercio A</h3>
+              <p>1 comercio(s)</p>
+              <ul>
+                <li>Comercio A · n productos · <data value="0">$ 0.000</data></li>
+              </ul>
+              <dl>
+                <dt>Envío P(n)</dt>
+                <dd><data value="0">$ 0.000</data></dd>
+                <dt>Total</dt>
+                <dd><data value="12345">$ 12.345</data></dd>
+              </dl>
+              <p>+ Recargo $ 0.000 vs. recomendado</p>
+              <input type="radio" id="escenario-2" name="escenario" value="2">
+              <label for="escenario-2">Elegir este escenario</label>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3>Dividir en 3 comercios</h3>
+              <p>3 comercio(s)</p>
+              <ul>
+                <li>Comercio A · n productos · <data value="0">$ 0.000</data></li>
+                <li>Comercio B · n productos · <data value="0">$ 0.000</data></li>
+                <li>Comercio C · n productos · <data value="0">$ 0.000</data></li>
+              </ul>
+              <dl>
+                <dt>Envío P(n)</dt>
+                <dd><data value="0">$ 0.000</data></dd>
+                <dt>Total</dt>
+                <dd><data value="11900">$ 11.900</data></dd>
+              </dl>
+              <p>+ Recargo $ 0.000 vs. recomendado</p>
+              <input type="radio" id="escenario-3" name="escenario" value="3">
+              <label for="escenario-3">Elegir este escenario</label>
+            </article>
+          </li>
+        </ul>
+      </section>
+
+      <section id="detalle" aria-labelledby="detalle-titulo">
+        <h2 id="detalle-titulo">Detalle del escenario seleccionado</h2>
+        <table>
+          <caption>Asignación de productos por comercio</caption>
+          <thead>
+            <tr>
+              <th scope="col">Producto</th>
+              <th scope="col">Cantidad</th>
+              <th scope="col">Comercio asignado</th>
+              <th scope="col">Precio</th>
+              <th scope="col">Cambiar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Leche entera 1L</th>
+              <td>2</td>
+              <td>Comercio A</td>
+              <td><data value="2200">$ 2.200</data></td>
+              <td>
+                <select name="comercio-1" aria-label="Cambiar comercio de Leche entera 1L">
+                  <option selected>Comercio A</option>
+                  <option>Comercio B</option>
+                  <option>Comercio C</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Yerba mate 1kg</th>
+              <td>1</td>
+              <td>Comercio B</td>
+              <td><data value="3100">$ 3.100</data></td>
+              <td>
+                <select name="comercio-2" aria-label="Cambiar comercio de Yerba mate 1kg">
+                  <option>Comercio A</option>
+                  <option selected>Comercio B</option>
+                  <option>Comercio C</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Detergente 750ml</th>
+              <td>1</td>
+              <td>Comercio B</td>
+              <td><data value="1500">$ 1.500</data></td>
+              <td>
+                <select name="comercio-3" aria-label="Cambiar comercio de Detergente 750ml">
+                  <option>Comercio A</option>
+                  <option selected>Comercio B</option>
+                  <option>Comercio C</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Fideos 500g</th>
+              <td>3</td>
+              <td>Comercio A</td>
+              <td><data value="2400">$ 2.400</data></td>
+              <td>
+                <select name="comercio-4" aria-label="Cambiar comercio de Fideos 500g">
+                  <option selected>Comercio A</option>
+                  <option>Comercio B</option>
+                  <option>Comercio C</option>
+                </select>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p role="note">⚠ Tu elección tiene un recargo de $ 0.000 respecto de la recomendada (<code>P(n) = P₀ + k·(n−1)^2.5</code>)</p>
+      </section>
+
+      <section id="faltantes" aria-labelledby="faltantes-titulo">
+        <h2 id="faltantes-titulo">Faltantes</h2>
+        <p>No hay productos faltantes en el escenario seleccionado.</p>
+      </section>
+
+      <button type="submit">Continuar al pago</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>Changuito</p>
+    <p>Comprá mejor, viví tranquilo</p>
+    <nav aria-label="Institucional">
+      <ul>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Privacidad</a></li>
+        <li><a href="#">Términos</a></li>
+      </ul>
+    </nav>
+    <p><small>© 2026 Changuito</small></p>
+  </footer>
+
+  <nav aria-label="Navegación inferior">
+    <ul>
+      <li><a href="explorar.html">Explorar</a></li>
+      <li><a href="mi-lista.html">Mi lista</a></li>
+      <li><a href="mis-pedidos.html">Pedidos</a></li>
+      <li><a href="perfil.html">Perfil</a></li>
+    </ul>
+  </nav>
+</body>
+</html>

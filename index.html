@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Changuito · Inicio</title>
+</head>
+<body>
+  <header>
+    <a href="index.html">Changuito</a>
+    <form action="pages/explorar.html" method="get" role="search">
+      <label for="buscar">Buscar productos</label>
+      <input type="search" id="buscar" name="q" placeholder="Buscar productos…">
+      <button type="submit">Buscar</button>
+    </form>
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="pages/explorar.html">Explorar</a></li>
+        <li><a href="pages/mi-lista.html">Mi lista (7)</a></li>
+        <li><a href="pages/mis-pedidos.html">Mis pedidos</a></li>
+        <li><a href="pages/perfil.html"><img src="assets/img/placeholder.svg" alt="" width="32" height="32"> María Clara</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section aria-labelledby="hero-titulo">
+      <h1 id="hero-titulo">Comprá mejor, viví tranquilo</h1>
+      <p>Armá tu lista, compará precios entre comercios y elegí dónde te conviene comprar.</p>
+      <p>
+        <a href="pages/mi-lista.html">Armar mi lista</a>
+        <a href="#multicomercio">Ver cómo funciona</a>
+      </p>
+      <figure>
+        <img src="assets/img/placeholder.svg" alt="Ilustración de una compra en varios comercios" width="560" height="320">
+      </figure>
+    </section>
+
+    <section aria-labelledby="categorias-titulo">
+      <h2 id="categorias-titulo">Categorías</h2>
+      <ul>
+        <li><a href="pages/explorar.html?categoria=frescos"><img src="assets/img/placeholder.svg" alt="" width="48" height="48"> Frescos</a></li>
+        <li><a href="pages/explorar.html?categoria=almacen"><img src="assets/img/placeholder.svg" alt="" width="48" height="48"> Almacén</a></li>
+        <li><a href="pages/explorar.html?categoria=limpieza"><img src="assets/img/placeholder.svg" alt="" width="48" height="48"> Limpieza</a></li>
+        <li><a href="pages/explorar.html?categoria=bebidas"><img src="assets/img/placeholder.svg" alt="" width="48" height="48"> Bebidas</a></li>
+        <li><a href="pages/explorar.html?categoria=perfumeria"><img src="assets/img/placeholder.svg" alt="" width="48" height="48"> Perfumería</a></li>
+        <li><a href="pages/explorar.html?categoria=mascotas"><img src="assets/img/placeholder.svg" alt="" width="48" height="48"> Mascotas</a></li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="destacados-titulo">
+      <h2 id="destacados-titulo">Productos destacados</h2>
+      <a href="pages/explorar.html">Ver todos ›</a>
+      <ul>
+        <li>
+          <article>
+            <img src="assets/img/placeholder.svg" alt="Leche entera 1L" width="160" height="120">
+            <p><strong>PATROCINADO</strong></p>
+            <h3><a href="pages/producto.html">Leche entera 1L</a></h3>
+            <p>Marca · 1 u.</p>
+            <p>desde <data value="1234">$ 1.234</data> en 3 comercios</p>
+            <button type="button">+ Agregar a lista</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <img src="assets/img/placeholder.svg" alt="Yerba 1kg" width="160" height="120">
+            <h3><a href="pages/producto.html">Yerba 1kg</a></h3>
+            <p>Marca · 1 u.</p>
+            <p>desde <data value="1234">$ 1.234</data> en 3 comercios</p>
+            <button type="button">+ Agregar a lista</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <img src="assets/img/placeholder.svg" alt="Detergente 750ml" width="160" height="120">
+            <h3><a href="pages/producto.html">Detergente 750ml</a></h3>
+            <p>Marca · 1 u.</p>
+            <p>desde <data value="1234">$ 1.234</data> en 3 comercios</p>
+            <button type="button">+ Agregar a lista</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <img src="assets/img/placeholder.svg" alt="Gaseosa 2.25L" width="160" height="120">
+            <h3><a href="pages/producto.html">Gaseosa 2.25L</a></h3>
+            <p>Marca · 1 u.</p>
+            <p>desde <data value="1234">$ 1.234</data> en 3 comercios</p>
+            <button type="button">+ Agregar a lista</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <img src="assets/img/placeholder.svg" alt="Arroz 1kg" width="160" height="120">
+            <h3><a href="pages/producto.html">Arroz 1kg</a></h3>
+            <p>Marca · 1 u.</p>
+            <p>desde <data value="1234">$ 1.234</data> en 3 comercios</p>
+            <button type="button">+ Agregar a lista</button>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <section id="multicomercio" aria-labelledby="multicomercio-titulo">
+      <h2 id="multicomercio-titulo">Un pedido, varios comercios</h2>
+      <p>Changuito arma tu compra entre los comercios que más te convienen y un solo repartidor te lleva todo.</p>
+      <a href="pages/mi-lista.html">Ver cómo funciona</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Changuito</p>
+    <p>Comprá mejor, viví tranquilo</p>
+    <nav aria-label="Institucional">
+      <ul>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Privacidad</a></li>
+        <li><a href="#">Términos</a></li>
+      </ul>
+    </nav>
+    <p><small>© 2026 Changuito</small></p>
+  </footer>
+
+  <nav aria-label="Navegación inferior">
+    <ul>
+      <li><a href="pages/explorar.html">Explorar</a></li>
+      <li><a href="pages/mi-lista.html">Mi lista</a></li>
+      <li><a href="pages/mis-pedidos.html">Pedidos</a></li>
+      <li><a href="pages/perfil.html">Perfil</a></li>
+    </ul>
+  </nav>
+</body>
+</html>

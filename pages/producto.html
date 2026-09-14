@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Changuito · Leche entera 1L</title>
+</head>
+<body>
+  <header>
+    <a href="../index.html">Changuito</a>
+    <form action="explorar.html" method="get" role="search">
+      <label for="buscar">Buscar productos</label>
+      <input type="search" id="buscar" name="q" placeholder="Buscar productos…">
+      <button type="submit">Buscar</button>
+    </form>
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="explorar.html">Explorar</a></li>
+        <li><a href="mi-lista.html">Mi lista (7)</a></li>
+        <li><a href="mis-pedidos.html">Mis pedidos</a></li>
+        <li><a href="perfil.html"><img src="../assets/img/placeholder.svg" alt="" width="32" height="32"> María Clara</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <nav aria-label="Ruta de navegación">
+      <ol>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="explorar.html?categoria=almacen">Almacén</a></li>
+        <li><a href="producto.html" aria-current="page">Leche entera 1L</a></li>
+      </ol>
+    </nav>
+
+    <article aria-labelledby="producto-titulo">
+      <section aria-label="Galería">
+        <figure>
+          <img src="../assets/img/placeholder.svg" alt="Leche entera 1L, vista principal" width="480" height="360">
+        </figure>
+        <ul>
+          <li><img src="../assets/img/placeholder.svg" alt="Vista frontal" width="72" height="72"></li>
+          <li><img src="../assets/img/placeholder.svg" alt="Vista lateral" width="72" height="72"></li>
+          <li><img src="../assets/img/placeholder.svg" alt="Información nutricional" width="72" height="72"></li>
+        </ul>
+      </section>
+
+      <section aria-label="Información del producto">
+        <h1 id="producto-titulo">Leche entera 1L</h1>
+        <p>Marca · Presentación 1 L</p>
+        <p>Leche entera larga vida en envase de 1 litro.</p>
+        <form action="mi-lista.html" method="post">
+          <p>
+            <button type="button" aria-label="Restar uno">−</button>
+            <label for="cantidad">Cantidad</label>
+            <input type="number" id="cantidad" name="cantidad" min="1" value="1">
+            <button type="button" aria-label="Sumar uno">+</button>
+          </p>
+          <button type="submit">+ Agregar a mi lista</button>
+        </form>
+      </section>
+
+      <section aria-labelledby="comparacion-titulo">
+        <h2 id="comparacion-titulo">Comparación de precios</h2>
+        <table>
+          <caption>Precio de Leche entera 1L por comercio</caption>
+          <thead>
+            <tr>
+              <th scope="col">Comercio</th>
+              <th scope="col">Precio</th>
+              <th scope="col">Stock</th>
+              <th scope="col">Actualizado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Comercio A <strong>Más barato</strong></th>
+              <td><data value="1100">$ 1.100</data></td>
+              <td>Disponible</td>
+              <td>hace 2 h</td>
+            </tr>
+            <tr>
+              <th scope="row">Comercio B</th>
+              <td><data value="1250">$ 1.250</data></td>
+              <td>Disponible</td>
+              <td>hace 1 día</td>
+            </tr>
+            <tr>
+              <th scope="row">Comercio C</th>
+              <td><data value="1310">$ 1.310</data></td>
+              <td>Sin stock</td>
+              <td>hace 3 días</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section aria-labelledby="promociones-titulo">
+        <h2 id="promociones-titulo">Promociones</h2>
+        <p>2x1 en Comercio B hasta el domingo</p>
+      </section>
+    </article>
+
+    <section aria-labelledby="relacionados-titulo">
+      <h2 id="relacionados-titulo">Productos relacionados</h2>
+      <ul>
+        <li>
+          <article>
+            <img src="../assets/img/placeholder.svg" alt="Producto 1" width="160" height="120">
+            <h3><a href="producto.html">Producto 1</a></h3>
+            <p>Marca · 1 u.</p>
+            <p>desde <data value="999">$ 999</data> en 3 comercios</p>
+            <button type="button">+ Agregar a lista</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <img src="../assets/img/placeholder.svg" alt="Producto 2" width="160" height="120">
+            <h3><a href="producto.html">Producto 2</a></h3>
+            <p>Marca · 1 u.</p>
+            <p>desde <data value="999">$ 999</data> en 3 comercios</p>
+            <button type="button">+ Agregar a lista</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <img src="../assets/img/placeholder.svg" alt="Producto 3" width="160" height="120">
+            <h3><a href="producto.html">Producto 3</a></h3>
+            <p>Marca · 1 u.</p>
+            <p>desde <data value="999">$ 999</data> en 3 comercios</p>
+            <button type="button">+ Agregar a lista</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <img src="../assets/img/placeholder.svg" alt="Producto 4" width="160" height="120">
+            <h3><a href="producto.html">Producto 4</a></h3>
+            <p>Marca · 1 u.</p>
+            <p>desde <data value="999">$ 999</data> en 3 comercios</p>
+            <button type="button">+ Agregar a lista</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <img src="../assets/img/placeholder.svg" alt="Producto 5" width="160" height="120">
+            <h3><a href="producto.html">Producto 5</a></h3>
+            <p>Marca · 1 u.</p>
+            <p>desde <data value="999">$ 999</data> en 3 comercios</p>
+            <button type="button">+ Agregar a lista</button>
+          </article>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Changuito</p>
+    <p>Comprá mejor, viví tranquilo</p>
+    <nav aria-label="Institucional">
+      <ul>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Privacidad</a></li>
+        <li><a href="#">Términos</a></li>
+      </ul>
+    </nav>
+    <p><small>© 2026 Changuito</small></p>
+  </footer>
+
+  <nav aria-label="Navegación inferior">
+    <ul>
+      <li><a href="explorar.html">Explorar</a></li>
+      <li><a href="mi-lista.html">Mi lista</a></li>
+      <li><a href="mis-pedidos.html">Pedidos</a></li>
+      <li><a href="perfil.html">Perfil</a></li>
+    </ul>
+  </nav>
+</body>
+</html>

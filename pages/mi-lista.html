@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Changuito · Mi lista</title>
+</head>
+<body>
+  <header>
+    <a href="../index.html">Changuito</a>
+    <form action="explorar.html" method="get" role="search">
+      <label for="buscar">Buscar productos</label>
+      <input type="search" id="buscar" name="q" placeholder="Buscar productos…">
+      <button type="submit">Buscar</button>
+    </form>
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="explorar.html">Explorar</a></li>
+        <li><a href="mi-lista.html" aria-current="page">Mi lista (7)</a></li>
+        <li><a href="mis-pedidos.html">Mis pedidos</a></li>
+        <li><a href="perfil.html"><img src="../assets/img/placeholder.svg" alt="" width="32" height="32"> María Clara</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form action="optimizador.html" method="get">
+      <section aria-labelledby="lista-titulo">
+        <h1 id="lista-titulo">Mi lista</h1>
+        <p>7 productos</p>
+        <button type="button">Guardar como frecuente</button>
+
+        <ul>
+          <li>
+            <article>
+              <img src="../assets/img/placeholder.svg" alt="Leche entera 1L" width="64" height="64">
+              <h2>Leche entera 1L</h2>
+              <p>Marca · presentación</p>
+              <p>
+                <button type="button" aria-label="Restar uno">−</button>
+                <label for="cant-1">Cantidad</label>
+                <input type="number" id="cant-1" name="cant-1" min="1" value="2">
+                <button type="button" aria-label="Sumar uno">+</button>
+              </p>
+              <p><data value="1234">$ 1.234</data></p>
+              <button type="button" aria-label="Quitar Leche entera 1L de la lista">🗑</button>
+            </article>
+          </li>
+          <li>
+            <article>
+              <img src="../assets/img/placeholder.svg" alt="Yerba mate 1kg" width="64" height="64">
+              <h2>Yerba mate 1kg</h2>
+              <p>Marca · presentación</p>
+              <p>
+                <button type="button" aria-label="Restar uno">−</button>
+                <label for="cant-2">Cantidad</label>
+                <input type="number" id="cant-2" name="cant-2" min="1" value="2">
+                <button type="button" aria-label="Sumar uno">+</button>
+              </p>
+              <p><data value="1234">$ 1.234</data></p>
+              <button type="button" aria-label="Quitar Yerba mate 1kg de la lista">🗑</button>
+            </article>
+          </li>
+          <li>
+            <article>
+              <img src="../assets/img/placeholder.svg" alt="Arroz largo fino 1kg" width="64" height="64">
+              <h2>Arroz largo fino 1kg</h2>
+              <p>Marca · presentación</p>
+              <p>
+                <button type="button" aria-label="Restar uno">−</button>
+                <label for="cant-3">Cantidad</label>
+                <input type="number" id="cant-3" name="cant-3" min="1" value="2">
+                <button type="button" aria-label="Sumar uno">+</button>
+              </p>
+              <p><data value="1234">$ 1.234</data></p>
+              <button type="button" aria-label="Quitar Arroz largo fino 1kg de la lista">🗑</button>
+            </article>
+          </li>
+          <li>
+            <article>
+              <img src="../assets/img/placeholder.svg" alt="Detergente 750ml" width="64" height="64">
+              <h2>Detergente 750ml</h2>
+              <p>Marca · presentación</p>
+              <p>
+                <button type="button" aria-label="Restar uno">−</button>
+                <label for="cant-4">Cantidad</label>
+                <input type="number" id="cant-4" name="cant-4" min="1" value="2">
+                <button type="button" aria-label="Sumar uno">+</button>
+              </p>
+              <p><data value="1234">$ 1.234</data></p>
+              <button type="button" aria-label="Quitar Detergente 750ml de la lista">🗑</button>
+            </article>
+          </li>
+          <li>
+            <article>
+              <img src="../assets/img/placeholder.svg" alt="Gaseosa cola 2.25L" width="64" height="64">
+              <h2>Gaseosa cola 2.25L</h2>
+              <p>Marca · presentación</p>
+              <p>
+                <button type="button" aria-label="Restar uno">−</button>
+                <label for="cant-5">Cantidad</label>
+                <input type="number" id="cant-5" name="cant-5" min="1" value="2">
+                <button type="button" aria-label="Sumar uno">+</button>
+              </p>
+              <p><data value="1234">$ 1.234</data></p>
+              <button type="button" aria-label="Quitar Gaseosa cola 2.25L de la lista">🗑</button>
+            </article>
+          </li>
+          <li>
+            <article>
+              <img src="../assets/img/placeholder.svg" alt="Fideos 500g" width="64" height="64">
+              <h2>Fideos 500g</h2>
+              <p>Marca · presentación</p>
+              <p>
+                <button type="button" aria-label="Restar uno">−</button>
+                <label for="cant-6">Cantidad</label>
+                <input type="number" id="cant-6" name="cant-6" min="1" value="2">
+                <button type="button" aria-label="Sumar uno">+</button>
+              </p>
+              <p><data value="1234">$ 1.234</data></p>
+              <button type="button" aria-label="Quitar Fideos 500g de la lista">🗑</button>
+            </article>
+          </li>
+        </ul>
+      </section>
+
+      <aside aria-labelledby="resumen-titulo">
+        <h2 id="resumen-titulo">Resumen</h2>
+        <dl>
+          <dt>Productos</dt>
+          <dd>7</dd>
+          <dt>Estimado (más barato)</dt>
+          <dd><data value="12345">$ 12.345</data></dd>
+          <dt>Tamaño de envío</dt>
+          <dd>Mediano</dd>
+        </dl>
+        <button type="submit">Optimizar compra</button>
+        <fieldset>
+          <legend>Si falta un producto:</legend>
+          <p><input type="radio" id="faltante-excluir" name="faltante" value="excluir" checked> <label for="faltante-excluir">Excluir y avisar</label></p>
+          <p><input type="radio" id="faltante-sustituto" name="faltante" value="sustituto"> <label for="faltante-sustituto">Sugerir sustituto</label></p>
+        </fieldset>
+      </aside>
+    </form>
+  </main>
+
+  <footer>
+    <p>Changuito</p>
+    <p>Comprá mejor, viví tranquilo</p>
+    <nav aria-label="Institucional">
+      <ul>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Privacidad</a></li>
+        <li><a href="#">Términos</a></li>
+      </ul>
+    </nav>
+    <p><small>© 2026 Changuito</small></p>
+  </footer>
+
+  <nav aria-label="Navegación inferior">
+    <ul>
+      <li><a href="explorar.html">Explorar</a></li>
+      <li><a href="mi-lista.html" aria-current="page">Mi lista</a></li>
+      <li><a href="mis-pedidos.html">Pedidos</a></li>
+      <li><a href="perfil.html">Perfil</a></li>
+    </ul>
+  </nav>
+</body>
+</html>

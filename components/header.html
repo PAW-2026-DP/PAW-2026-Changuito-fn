@@ -1,0 +1,19 @@
+<!-- Componente: header (cmp-header-cliente / cmp-header-cliente-mobile).
+     Fragmento de referencia: sin JS no hay includes, se copia igual en cada página.
+     Rutas relativas a pages/ (en index.html se antepone "pages/"). -->
+<header>
+  <a href="../index.html">Changuito</a>
+  <form action="explorar.html" method="get" role="search">
+    <label for="buscar">Buscar productos</label>
+    <input type="search" id="buscar" name="q" placeholder="Buscar productos…">
+    <button type="submit">Buscar</button>
+  </form>
+  <nav aria-label="Principal">
+    <ul>
+      <li><a href="explorar.html">Explorar</a></li>
+      <li><a href="mi-lista.html">Mi lista (7)</a></li>
+      <li><a href="mis-pedidos.html">Mis pedidos</a></li>
+      <li><a href="perfil.html"><img src="../assets/img/placeholder.svg" alt="" width="32" height="32"> María Clara</a></li>
+    </ul>
+  </nav>
+</header>

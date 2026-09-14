@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Changuito · Explorar productos</title>
+</head>
+<body>
+  <header>
+    <a href="../index.html">Changuito</a>
+    <form action="explorar.html" method="get" role="search">
+      <label for="buscar">Buscar productos</label>
+      <input type="search" id="buscar" name="q" placeholder="Buscar productos…" value="leche">
+      <button type="submit">Buscar</button>
+    </form>
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="explorar.html" aria-current="page">Explorar</a></li>
+        <li><a href="mi-lista.html">Mi lista (7)</a></li>
+        <li><a href="mis-pedidos.html">Mis pedidos</a></li>
+        <li><a href="perfil.html"><img src="../assets/img/placeholder.svg" alt="" width="32" height="32"> María Clara</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Resultados para “leche”</h1>
+    <p>24 productos</p>
+
+    <!-- Filtros: desplegados en desktop; en mobile el mismo panel se colapsa (04b-explorar-filtros-abiertos). -->
+    <aside aria-labelledby="filtros-titulo">
+      <details open>
+        <summary id="filtros-titulo">Filtros</summary>
+        <form action="explorar.html" method="get">
+          <fieldset>
+            <legend>Categoría</legend>
+            <p><input type="checkbox" id="cat-frescos" name="categoria" value="frescos"> <label for="cat-frescos">Frescos</label></p>
+            <p><input type="checkbox" id="cat-almacen" name="categoria" value="almacen" checked> <label for="cat-almacen">Almacén</label></p>
+            <p><input type="checkbox" id="cat-limpieza" name="categoria" value="limpieza"> <label for="cat-limpieza">Limpieza</label></p>
+            <p><input type="checkbox" id="cat-bebidas" name="categoria" value="bebidas"> <label for="cat-bebidas">Bebidas</label></p>
+          </fieldset>
+          <fieldset>
+            <legend>Comercios</legend>
+            <p><input type="checkbox" id="com-a" name="comercio" value="a" checked> <label for="com-a">Comercio A</label></p>
+            <p><input type="checkbox" id="com-b" name="comercio" value="b" checked> <label for="com-b">Comercio B</label></p>
+            <p><input type="checkbox" id="com-c" name="comercio" value="c" checked> <label for="com-c">Comercio C</label></p>
+          </fieldset>
+          <p>
+            <label for="orden">Ordenar por</label>
+            <select id="orden" name="orden">
+              <option value="precio-asc" selected>Menor precio</option>
+              <option value="precio-desc">Mayor precio</option>
+              <option value="nombre">Nombre</option>
+            </select>
+          </p>
+          <button type="reset">Limpiar filtros</button>
+          <button type="submit">Aplicar filtros</button>
+        </form>
+      </details>
+    </aside>
+
+    <section aria-labelledby="resultados-titulo">
+      <h2 id="resultados-titulo">Productos</h2>
+      <ul>
+        <li>
+          <article>
+            <img src="../assets/img/placeholder.svg" alt="Producto 1" width="160" height="120">
+            <p><strong>PATROCINADO</strong></p>
+            <h3><a href="producto.html">Producto 1</a></h3>
+            <p>Marca · 1 u.</p>
+            <p>desde <data value="1234">$ 1.234</data> en 3 comercios</p>
+            <button type="button">+ Agregar a lista</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <img src="../assets/img/placeholder.svg" alt="Producto 2" width="160" height="120">
+            <p><strong>PATROCINADO</strong></p>
+            <h3><a href="producto.html">Producto 2</a></h3>
+            <p>Marca · 1 u.</p>
+            <p>desde <data value="1234">$ 1.234</data> en 3 comercios</p>
+            <button type="button">+ Agregar a lista</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <img src="../assets/img/placeholder.svg" alt="Producto 3" width="160" height="120">
+            <h3><a href="producto.html">Producto 3</a></h3>
+            <p>Marca · 1 u.</p>
+            <p>desde <data value="1234">$ 1.234</data> en 3 comercios</p>
+            <button type="button">+ Agregar a lista</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <img src="../assets/img/placeholder.svg" alt="Producto 4" width="160" height="120">
+            <h3><a href="producto.html">Producto 4</a></h3>
+            <p>Marca · 1 u.</p>
+            <p>desde <data value="1234">$ 1.234</data> en 3 comercios</p>
+            <button type="button">+ Agregar a lista</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <img src="../assets/img/placeholder.svg" alt="Producto 5" width="160" height="120">
+            <h3><a href="producto.html">Producto 5</a></h3>
+            <p>Marca · 1 u.</p>
+            <p>desde <data value="1234">$ 1.234</data> en 3 comercios</p>
+            <button type="button">+ Agregar a lista</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <img src="../assets/img/placeholder.svg" alt="Producto 6" width="160" height="120">
+            <h3><a href="producto.html">Producto 6</a></h3>
+            <p>Marca · 1 u.</p>
+            <p>desde <data value="1234">$ 1.234</data> en 3 comercios</p>
+            <button type="button">+ Agregar a lista</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <img src="../assets/img/placeholder.svg" alt="Producto 7" width="160" height="120">
+            <h3><a href="producto.html">Producto 7</a></h3>
+            <p>Marca · 1 u.</p>
+            <p>desde <data value="1234">$ 1.234</data> en 3 comercios</p>
+            <button type="button">+ Agregar a lista</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <img src="../assets/img/placeholder.svg" alt="Producto 8" width="160" height="120">
+            <h3><a href="producto.html">Producto 8</a></h3>
+            <p>Marca · 1 u.</p>
+            <p>desde <data value="1234">$ 1.234</data> en 3 comercios</p>
+            <button type="button">+ Agregar a lista</button>
+          </article>
+        </li>
+      </ul>
+
+      <nav aria-label="Paginación">
+        <ul>
+          <li><a href="#" aria-label="Página anterior">‹</a></li>
+          <li><a href="#" aria-current="page">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li>…</li>
+          <li><a href="#" aria-label="Página siguiente">›</a></li>
+        </ul>
+      </nav>
+    </section>
+  </main>
+
+  <footer>
+    <p>Changuito</p>
+    <p>Comprá mejor, viví tranquilo</p>
+    <nav aria-label="Institucional">
+      <ul>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Privacidad</a></li>
+        <li><a href="#">Términos</a></li>
+      </ul>
+    </nav>
+    <p><small>© 2026 Changuito</small></p>
+  </footer>
+
+  <nav aria-label="Navegación inferior">
+    <ul>
+      <li><a href="explorar.html" aria-current="page">Explorar</a></li>
+      <li><a href="mi-lista.html">Mi lista</a></li>
+      <li><a href="mis-pedidos.html">Pedidos</a></li>
+      <li><a href="perfil.html">Perfil</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
