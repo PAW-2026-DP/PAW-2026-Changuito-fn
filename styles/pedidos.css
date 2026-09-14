@@ -1,0 +1,4 @@
+main > table tbody td:nth-last-child(2) { color: var(--orange); font-weight: 800; }
+main > article[aria-labelledby="pedido-titulo"] > header strong { color: var(--orange); }
+main > article[aria-labelledby="pedido-titulo"] > section:last-child { background: var(--cream); }
+main > article[aria-labelledby="pedido-titulo"] > section:last-child p:last-child { font-size: 1.2rem; color: var(--green-dark); }

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Changuito · Confirmar pedido</title>
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/components.css">
+  <link rel="stylesheet" href="../styles/pages.css">
+  <link rel="stylesheet" href="../styles/checkout.css">
+</head>
+<body>
+  <header>
+    <a href="../index.html">Changuito</a>
+    <form action="explorar.html" method="get" role="search">
+      <label for="buscar">Buscar productos</label>
+      <input type="search" id="buscar" name="q" placeholder="Buscar productos…">
+      <button type="submit">Buscar</button>
+    </form>
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="explorar.html">Explorar</a></li>
+        <li><a href="mi-lista.html">Mi lista (7)</a></li>
+        <li><a href="mis-pedidos.html">Mis pedidos</a></li>
+        <li><a href="perfil.html"><img src="../assets/img/placeholder.svg" alt="" width="32" height="32"> María Clara</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Confirmar pedido</h1>
+
+    <form id="checkout" action="detalle-pedido.html" method="get">
+      <fieldset>
+        <legend>1. Dirección de entrega</legend>
+        <p>
+          <label for="direccion">Dirección</label>
+          <select id="direccion" name="direccion">
+            <option selected>Calle Falsa 123, Luján</option>
+            <option>Trabajo · Calle, número, localidad</option>
+          </select>
+        </p>
+        <p><a href="perfil.html#nueva-direccion">+ Agregar nueva dirección</a></p>
+      </fieldset>
+
+      <fieldset>
+        <legend>2. Franja horaria</legend>
+        <p><input type="radio" id="franja-1" name="franja" value="hoy-18" checked> <label for="franja-1">Hoy 18–19 h</label></p>
+        <p><input type="radio" id="franja-2" name="franja" value="hoy-19"> <label for="franja-2">Hoy 19–20 h</label></p>
+        <p><input type="radio" id="franja-3" name="franja" value="manana-10"> <label for="franja-3">Mañana 10–11 h</label></p>
+      </fieldset>
+
+      <fieldset>
+        <legend>3. Medio de pago</legend>
+        <p><input type="radio" id="pago-tarjeta" name="pago" value="tarjeta" checked> <label for="pago-tarjeta">Tarjeta</label></p>
+        <p><input type="radio" id="pago-transferencia" name="pago" value="transferencia"> <label for="pago-transferencia">Transferencia</label></p>
+        <p><input type="radio" id="pago-efectivo" name="pago" value="efectivo"> <label for="pago-efectivo">Efectivo al recibir</label></p>
+      </fieldset>
+
+      <section aria-labelledby="ordenes-titulo">
+        <h2 id="ordenes-titulo">4. Pedidos por comercio</h2>
+        <ul>
+          <li>Comercio A · 4 productos · <data value="6100">$ 6.100</data></li>
+          <li>Comercio B · 3 productos · <data value="4600">$ 4.600</data></li>
+        </ul>
+      </section>
+    </form>
+
+    <aside aria-labelledby="total-titulo">
+      <h2 id="total-titulo">Total a pagar</h2>
+      <dl>
+        <dt>Productos</dt>
+        <dd><data value="10700">$ 10.700</data></dd>
+        <dt>Envío P(2)</dt>
+        <dd><data value="1500">$ 1.500</data></dd>
+        <dt>Recargo por elección</dt>
+        <dd><data value="0">$ 0</data></dd>
+        <dt>Fee de servicio</dt>
+        <dd><data value="200">$ 200</data></dd>
+        <dt>Total</dt>
+        <dd><strong><data value="12400">$ 12.400</data></strong></dd>
+      </dl>
+      <button type="submit" form="checkout">Confirmar y pagar</button>
+      <p><small>El precio mostrado se respeta al confirmar.</small></p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Changuito</p>
+    <p>Comprá mejor, viví tranquilo</p>
+    <nav aria-label="Institucional">
+      <ul>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Privacidad</a></li>
+        <li><a href="#">Términos</a></li>
+      </ul>
+    </nav>
+    <p><small>© 2026 Changuito</small></p>
+  </footer>
+
+  <nav aria-label="Navegación inferior">
+    <ul>
+      <li><a href="explorar.html">Explorar</a></li>
+      <li><a href="mi-lista.html">Mi lista</a></li>
+      <li><a href="mis-pedidos.html">Pedidos</a></li>
+      <li><a href="perfil.html">Perfil</a></li>
+    </ul>
+  </nav>
+</body>
+</html>

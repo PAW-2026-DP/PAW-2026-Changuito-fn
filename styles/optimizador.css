@@ -1,0 +1,4 @@
+main > form > section[id="escenarios"] article:first-child { border: 2px solid var(--orange); box-shadow: 0 14px 30px rgba(227, 111, 57, .12); }
+main > form > section[id="escenarios"] article strong { color: var(--orange); }
+main > form > section[id="detalle"] { overflow-x: auto; }
+main > form > section[id="faltantes"] h2 { color: var(--green-dark); }

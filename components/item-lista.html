@@ -1,0 +1,17 @@
+<!-- Componente: ítem de lista (cmp-item-lista). Se usa dentro de un <ul>.
+     Los id del input deben ser únicos por página (cant-1, cant-2, ...). -->
+<li>
+  <article>
+    <img src="../assets/img/placeholder.svg" alt="Leche entera 1L" width="64" height="64">
+    <h3>Leche entera 1L</h3>
+    <p>Marca · presentación</p>
+    <p>
+      <button type="button" aria-label="Restar uno">−</button>
+      <label for="cant-1">Cantidad</label>
+      <input type="number" id="cant-1" name="cantidad" min="1" value="2">
+      <button type="button" aria-label="Sumar uno">+</button>
+    </p>
+    <p><data value="1234">$ 1.234</data></p>
+    <button type="button" aria-label="Quitar Leche entera 1L de la lista">🗑</button>
+  </article>
+</li>

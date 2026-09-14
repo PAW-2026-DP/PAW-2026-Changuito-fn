@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Changuito · Mi lista</title>
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/components.css">
+  <link rel="stylesheet" href="../styles/pages.css">
+  <link rel="stylesheet" href="../styles/listas.css">
+</head>
+<body>
+  <header>
+    <a href="../index.html">Changuito</a>
+    <form action="explorar.html" method="get" role="search">
+      <label for="buscar">Buscar productos</label>
+      <input type="search" id="buscar" name="q" placeholder="Buscar productos…">
+      <button type="submit">Buscar</button>
+    </form>
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="explorar.html">Explorar</a></li>
+        <li><a href="mi-lista.html" aria-current="page">Mi lista (7)</a></li>
+        <li><a href="mis-pedidos.html">Mis pedidos</a></li>
+        <li><a href="perfil.html"><img src="../assets/img/placeholder.svg" alt="" width="32" height="32"> María Clara</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form action="optimizador.html" method="get">
+      <section aria-labelledby="lista-titulo">
+        <h1 id="lista-titulo">Mi lista</h1>
+        <p>7 productos</p>
+        <button type="button">Guardar como frecuente</button>
+
+        <ul class="lista-productos">
+          <li>
+            <article>
+              <div class="producto-header">
+                <h2>Leche entera 1L</h2>
+                <span>Marca · presentación</span>
+              </div>
+
+              <div class="producto-controls">
+                <button type="button" aria-label="Restar uno">−</button>
+                <div class="cantidad-box">
+                  <label for="cant-1">Cantidad</label>
+                  <input type="number" id="cant-1" name="cant-1" min="1" value="2">
+                </div>
+                <button type="button" aria-label="Sumar uno">+</button>
+              </div>
+
+              <div class="producto-footer">
+                <data value="1234">$ 1.234</data>
+                <button type="button" aria-label="Quitar Leche entera 1L de la lista">🗑</button>
+              </div>
+
+              <div class="producto-comercio">
+                <label for="comercio-1">Comercio</label>
+                <select id="comercio-1" name="comercio-1">
+                  <option selected>Comercio A</option>
+                  <option>Comercio B</option>
+                  <option>Comercio C</option>
+                </select>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article>
+              <div class="producto-header">
+                <h2>Yerba mate 1kg</h2>
+                <span>Marca · presentación</span>
+              </div>
+
+              <div class="producto-controls">
+                <button type="button" aria-label="Restar uno">−</button>
+                <div class="cantidad-box">
+                  <label for="cant-2">Cantidad</label>
+                  <input type="number" id="cant-2" name="cant-2" min="1" value="2">
+                </div>
+                <button type="button" aria-label="Sumar uno">+</button>
+              </div>
+
+              <div class="producto-footer">
+                <data value="1234">$ 1.234</data>
+                <button type="button" aria-label="Quitar Yerba mate 1kg de la lista">🗑</button>
+              </div>
+
+              <div class="producto-comercio">
+                <label for="comercio-2">Comercio</label>
+                <select id="comercio-2" name="comercio-2">
+                  <option selected>Comercio A</option>
+                  <option>Comercio B</option>
+                  <option>Comercio C</option>
+                </select>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article>
+              <div class="producto-header">
+                <h2>Arroz largo fino 1kg</h2>
+                <span>Marca · presentación</span>
+              </div>
+
+              <div class="producto-controls">
+                <button type="button" aria-label="Restar uno">−</button>
+                <div class="cantidad-box">
+                  <label for="cant-3">Cantidad</label>
+                  <input type="number" id="cant-3" name="cant-3" min="1" value="2">
+                </div>
+                <button type="button" aria-label="Sumar uno">+</button>
+              </div>
+
+              <div class="producto-footer">
+                <data value="1234">$ 1.234</data>
+                <button type="button" aria-label="Quitar Arroz largo fino 1kg de la lista">🗑</button>
+              </div>
+
+              <div class="producto-comercio">
+                <label for="comercio-3">Comercio</label>
+                <select id="comercio-3" name="comercio-3">
+                  <option selected>Comercio A</option>
+                  <option>Comercio B</option>
+                  <option>Comercio C</option>
+                </select>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </section>
+
+      <aside aria-labelledby="resumen-titulo">
+        <h2 id="resumen-titulo">Resumen</h2>
+        <dl>
+          <dt>Productos</dt>
+          <dd>7</dd>
+          <dt>Estimado (más barato)</dt>
+          <dd><data value="12345">$ 12.345</data></dd>
+          <dt>Tamaño de envío</dt>
+          <dd>Mediano</dd>
+        </dl>
+
+        <button type="submit">Optimizar compra</button>
+        <fieldset>
+          <legend>Si falta un producto:</legend>
+          <p><input type="radio" id="faltante-excluir" name="faltante" value="excluir" checked> <label for="faltante-excluir">Excluir y avisar</label></p>
+          <p><input type="radio" id="faltante-sustituto" name="faltante" value="sustituto"> <label for="faltante-sustituto">Sugerir sustituto</label></p>
+        </fieldset>
+      </aside>
+    </form>
+  </main>
+
+  <footer>
+    <p>Changuito</p>
+    <p>Comprá mejor, viví tranquilo</p>
+    <nav aria-label="Institucional">
+      <ul>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Privacidad</a></li>
+        <li><a href="#">Términos</a></li>
+      </ul>
+    </nav>
+    <p><small>© 2026 Changuito</small></p>
+  </footer>
+
+  <nav aria-label="Navegación inferior">
+    <ul>
+      <li><a href="explorar.html">Explorar</a></li>
+      <li><a href="mi-lista.html" aria-current="page">Mi lista</a></li>
+      <li><a href="mis-pedidos.html">Pedidos</a></li>
+      <li><a href="perfil.html">Perfil</a></li>
+    </ul>
+  </nav>
+</body>
+</html>

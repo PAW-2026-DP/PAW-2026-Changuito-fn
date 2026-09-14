@@ -1,0 +1,11 @@
+main:has(> form#checkout) { display: grid; grid-template-columns: minmax(0, 1fr) 310px; gap: 2rem; align-items: start; }
+main:has(> form#checkout) > h1 { grid-column: 1 / -1; }
+main > form#checkout { grid-column: 1; align-items: start; }
+main > form#checkout fieldset { box-shadow: 0 8px 25px rgba(23, 35, 31, .04); }
+main > form#checkout + aside { grid-column: 2; position: sticky; top: 105px; float: none; width: auto; margin: 0; padding: 1.5rem; border-top: 5px solid var(--orange); box-shadow: var(--shadow); }
+main > form#checkout + aside dd:last-child { color: var(--green); font-size: 1.25rem; }
+
+@media (max-width: 900px) {
+	main:has(> form#checkout) { display: block; }
+	main > form#checkout + aside { position: static; margin-top: 1.5rem; }
+}

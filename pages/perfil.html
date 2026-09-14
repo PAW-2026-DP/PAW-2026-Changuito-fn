@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Changuito · Mi perfil</title>
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/components.css">
+  <link rel="stylesheet" href="../styles/pages.css">
+  <link rel="stylesheet" href="../styles/perfil.css">
+</head>
+<body>
+  <header>
+    <a href="../index.html">Changuito</a>
+    <form action="explorar.html" method="get" role="search">
+      <label for="buscar">Buscar productos</label>
+      <input type="search" id="buscar" name="q" placeholder="Buscar productos…">
+      <button type="submit">Buscar</button>
+    </form>
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="explorar.html">Explorar</a></li>
+        <li><a href="mi-lista.html">Mi lista (7)</a></li>
+        <li><a href="mis-pedidos.html">Mis pedidos</a></li>
+        <li><a href="perfil.html" aria-current="page"><img src="../assets/img/placeholder.svg" alt="" width="32" height="32"> María Clara</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Mi perfil</h1>
+
+    <nav aria-label="Pestañas">
+      <ul>
+        <li><a href="perfil.html?tab=datos" data-tab-link="datos">Datos</a></li>
+        <li><a href="perfil.html?tab=direcciones" data-tab-link="direcciones">Direcciones</a></li>
+        <li><a href="perfil.html?tab=premium" data-tab-link="premium">Plan Premium</a></li>
+        <li><a href="listas-guardadas.html">Listas frecuentes</a></li>
+      </ul>
+    </nav>
+
+    <section aria-labelledby="datos-titulo" data-perfil-tab="datos" hidden>
+      <h2 id="datos-titulo">Datos personales</h2>
+      <form action="perfil.html?tab=datos" method="post">
+        <p><label for="nombre">Nombre completo</label><input type="text" id="nombre" name="nombre" value="María Clara" required></p>
+        <p><label for="email-perfil">Email</label><input type="email" id="email-perfil" name="email" value="maria@example.com" required></p>
+        <p><label for="telefono">Teléfono</label><input type="tel" id="telefono" name="telefono" placeholder="11 1234 5678"></p>
+        <button type="submit">Guardar cambios</button>
+      </form>
+    </section>
+
+    <section aria-labelledby="direcciones-titulo" data-perfil-tab="direcciones">
+      <h2 id="direcciones-titulo">Direcciones</h2>
+      <ul>
+        <li>
+          <article>
+            <h3>Casa (principal)</h3>
+            <address>Calle, número, localidad, CP</address>
+            <button type="button">Editar</button>
+            <button type="button">Eliminar</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <h3>Trabajo</h3>
+            <address>Calle, número, localidad, CP</address>
+            <button type="button">Editar</button>
+            <button type="button">Eliminar</button>
+          </article>
+        </li>
+      </ul>
+      <a href="#nueva-direccion">+ Nueva dirección</a>
+    </section>
+
+    <section id="nueva-direccion" aria-labelledby="nueva-direccion-titulo" data-perfil-tab="direcciones">
+      <h2 id="nueva-direccion-titulo">Nueva dirección</h2>
+      <form action="perfil.html" method="post">
+        <p>
+          <label for="alias">Alias</label>
+          <input type="text" id="alias" name="alias" placeholder="Casa" required>
+        </p>
+        <p>
+          <label for="calle">Calle y número</label>
+          <input type="text" id="calle" name="calle" autocomplete="address-line1" required>
+        </p>
+        <p>
+          <label for="localidad">Localidad</label>
+          <input type="text" id="localidad" name="localidad" autocomplete="address-level2" required>
+        </p>
+        <p>
+          <label for="cp">Código postal</label>
+          <input type="text" id="cp" name="cp" autocomplete="postal-code" inputmode="numeric" required>
+        </p>
+        <button type="submit">Guardar</button>
+      </form>
+    </section>
+
+    <section aria-labelledby="premium-titulo" data-perfil-tab="premium" hidden>
+      <h2 id="premium-titulo">Plan Premium</h2>
+      <p>Disfrutá una experiencia sin publicidad y beneficios especiales en tus envíos.</p>
+      <ul>
+        <li>Sin publicidad.</li>
+        <li>Envíos bonificados según el límite mensual.</li>
+        <li>Prioridad en horarios de alta demanda.</li>
+      </ul>
+      <button type="button">Elegir Plan Premium</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Changuito</p>
+    <p>Comprá mejor, viví tranquilo</p>
+    <nav aria-label="Institucional">
+      <ul>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Privacidad</a></li>
+        <li><a href="#">Términos</a></li>
+      </ul>
+    </nav>
+    <p><small>© 2026 Changuito</small></p>
+  </footer>
+
+  <nav aria-label="Navegación inferior">
+    <ul>
+      <li><a href="explorar.html">Explorar</a></li>
+      <li><a href="mi-lista.html">Mi lista</a></li>
+      <li><a href="mis-pedidos.html">Pedidos</a></li>
+      <li><a href="perfil.html" aria-current="page">Perfil</a></li>
+    </ul>
+  </nav>
+  <script src="../utils/perfil.js"></script>
+</body>
+</html>
