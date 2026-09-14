@@ -1,0 +1,4 @@
+main > section[aria-labelledby="login-titulo"], main > section[aria-labelledby="registro-titulo"] { max-width: 520px; margin-inline: auto; padding: 2rem; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
+main > section[aria-labelledby="login-titulo"] h1, main > section[aria-labelledby="registro-titulo"] h1 { color: var(--green-dark); }
+main > section[aria-labelledby="login-titulo"] form p, main > section[aria-labelledby="registro-titulo"] form p { display: grid; gap: .35rem; }
+main > section[aria-labelledby="login-titulo"] form button, main > section[aria-labelledby="registro-titulo"] form button { width: 100%; margin-top: .5rem; }

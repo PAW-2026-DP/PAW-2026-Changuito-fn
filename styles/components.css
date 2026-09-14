@@ -1,0 +1,74 @@
+header nav a,
+header > a:first-child,
+footer a,
+button,
+a[role="button"] {
+  transition: color .18s ease, background .18s ease, transform .18s ease;
+}
+
+header nav a:hover { color: var(--orange); }
+
+main > nav[aria-label="Pestañas"] ul,
+main > nav[aria-label="Ruta de navegación"] ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 2rem;
+}
+
+main > nav[aria-label="Pestañas"] a {
+  display: block;
+  padding: .55rem .9rem;
+  border-radius: 999px;
+  background: var(--cream);
+  color: var(--ink);
+  text-decoration: none;
+}
+
+main > nav[aria-label="Pestañas"] a[aria-current="true"] {
+  background: var(--green);
+  color: #fff;
+}
+
+main > nav[aria-label="Ruta de navegación"] ol {
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+main > nav[aria-label="Ruta de navegación"] li:not(:last-child)::after {
+  content: "/";
+  margin-left: .5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: 0 8px 25px rgba(23, 35, 31, .04);
+}
+
+caption {
+  padding: .8rem;
+  color: var(--muted);
+  text-align: left;
+  font-weight: 700;
+}
+
+th, td {
+  padding: .85rem 1rem;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+}
+
+th { color: var(--green-dark); }
+thead { background: var(--cream); }
+tbody tr:last-child th, tbody tr:last-child td { border-bottom: 0; }
+tbody tr:hover { background: #fbf8f1; }
+
+@media (max-width: 640px) {
+  table { display: block; overflow-x: auto; white-space: nowrap; }
+}

@@ -1,0 +1,4 @@
+main > form#checkout { align-items: start; }
+main > form#checkout fieldset { box-shadow: 0 8px 25px rgba(23, 35, 31, .04); }
+main > form#checkout + aside { padding: 1.5rem; border-top: 5px solid var(--orange); box-shadow: var(--shadow); }
+main > form#checkout + aside dd:last-child { color: var(--green); font-size: 1.25rem; }

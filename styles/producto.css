@@ -1,0 +1,5 @@
+main > article[aria-labelledby="producto-titulo"] { align-items: start; }
+main > article[aria-labelledby="producto-titulo"] > section[aria-label="Información del producto"] h1 { color: var(--green-dark); }
+main > article[aria-labelledby="producto-titulo"] > section[aria-label="Información del producto"] > p:nth-of-type(2) { font-size: 1.1rem; color: var(--ink); }
+main > article[aria-labelledby="producto-titulo"] > section[aria-labelledby="comparacion-titulo"] { overflow-x: auto; }
+main > article[aria-labelledby="producto-titulo"] > section[aria-labelledby="comparacion-titulo"] strong { display: inline-block; margin-left: .35rem; color: var(--orange); font-size: .75rem; }

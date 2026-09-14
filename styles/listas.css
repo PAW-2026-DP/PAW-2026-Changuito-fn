@@ -1,0 +1,4 @@
+main > ul > li > article { display: flex; flex-direction: column; }
+main > ul > li > article p:nth-of-type(2) { min-height: 3.2rem; }
+main > ul > li > article a { margin-top: auto; }
+main > ul > li > article a + a { margin-top: .6rem; }

@@ -1,0 +1,5 @@
+main > section[aria-labelledby="direcciones-titulo"] { padding: 1.5rem; background: var(--mint); border-radius: var(--radius); }
+main > section[aria-labelledby="direcciones-titulo"] > ul { margin-top: 1rem; }
+main > section[aria-labelledby="direcciones-titulo"] article { background: var(--surface); }
+main > section[aria-labelledby="direcciones-titulo"] article button + button { background: var(--cream); color: var(--ink); }
+main > section[id="nueva-direccion"] { box-shadow: var(--shadow); }
