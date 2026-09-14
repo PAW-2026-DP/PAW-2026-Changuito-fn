@@ -11,7 +11,7 @@ https://www.figma.com/design/ZeL7MqjxUKq20VJu6yR9Us/Changuito?node-id=1-30&t=3KU
 
 Frontend de la aplicacion web Changuito, una plataforma para armar listas de compras, comparar precios entre supermercados y elegir la alternativa de compra mas conveniente.
 
-Esta primera version contiene solamente la estructura inicial de carpetas. No incluye archivos HTML, CSS ni JavaScript.
+Este proyecto se mantiene como HTML y CSS puro para la maquetacion inicial de la interfaz.
 
 ## Objetivo del frontend
 
@@ -28,12 +28,32 @@ El frontend sera la interfaz web para el cliente de Changuito. Permitira:
 - Consultar el estado y el detalle de los pedidos.
 - Administrar el perfil, las direcciones de entrega y las listas guardadas.
 
-## Stack previsto
+## Stack actual
 
 - HTML5
 - CSS3
-- JavaScript sin frameworks
-- Comunicacion con el backend mediante solicitudes HTTP
+- Vite para levantar el proyecto en local
+- Sin JavaScript por el momento
+
+## Como levantarlo
+
+1. Instalar dependencias:
+
+```bash
+npm install
+```
+
+2. Ejecutar el proyecto en modo desarrollo:
+
+```bash
+npm run dev
+```
+
+3. Abrir la URL que muestre Vite en el navegador, normalmente:
+
+```bash
+http://localhost:5173
+```
 
 ## Estructura inicial
 
