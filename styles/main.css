@@ -163,6 +163,44 @@ main > section > nav ul { display: flex; justify-content: center; gap: .45rem; m
 main > section > nav a { display: grid; place-items: center; min-width: 2.5rem; height: 2.5rem; border: 1px solid var(--line); border-radius: 8px; text-decoration: none; background: var(--surface); }
 main > section > nav a[aria-current="page"] { background: var(--green); color: #fff; }
 
+main > nav[aria-label="Paginación"] ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .5rem;
+  list-style: none;
+  margin: 2rem 0 0;
+  padding: 0;
+}
+main > nav[aria-label="Paginación"] li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main > nav[aria-label="Paginación"] a {
+  display: grid;
+  place-items: center;
+  min-width: 2.5rem;
+  height: 2.5rem;
+  padding: 0 .75rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+  text-decoration: none;
+}
+main > nav[aria-label="Paginación"] a[aria-current="page"] {
+  background: var(--green);
+  border-color: var(--green);
+  color: #fff;
+}
+main > nav[aria-label="Paginación"] li:last-child,
+main > nav[aria-label="Paginación"] li:nth-child(5) {
+  min-width: 1.25rem;
+  color: var(--muted);
+}
+
 main > form { display: grid; grid-template-columns: minmax(0, 1fr) 310px; gap: 2rem; align-items: start; }
 main > form > section { grid-column: 1; }
 main > form > aside { grid-column: 2; grid-row: 1; position: sticky; top: 105px; }

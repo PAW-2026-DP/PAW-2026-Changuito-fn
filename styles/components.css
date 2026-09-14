@@ -69,6 +69,35 @@ thead { background: var(--cream); }
 tbody tr:last-child th, tbody tr:last-child td { border-bottom: 0; }
 tbody tr:hover { background: #fbf8f1; }
 
+main > section > ul > li > article {
+  display: flex;
+  flex-direction: column;
+}
+
+main > section > ul > li > article img {
+  height: 132px;
+  margin-bottom: 1rem;
+}
+
+main > section > ul > li > article p strong {
+  display: block;
+  min-height: 1.1rem;
+}
+
+main > section > ul > li > article h3 {
+  min-height: 2.35rem;
+}
+
+main > section > ul > li > article p:last-of-type {
+  min-height: 3.2rem;
+}
+
+main > section > ul > li > article button {
+  margin-top: auto;
+}
+
 @media (max-width: 640px) {
   table { display: block; overflow-x: auto; white-space: nowrap; }
+
+  main > section > ul > li > article img { height: 112px; }
 }
